@@ -1,4 +1,22 @@
 import streamlit as st
+st.markdown("""
+    <style>
+    /* Paksa Background Utama Jadi Dark Gray/Hitam */
+    .stApp {
+        background-color: #0E1117 !important;
+    }
+    
+    /* Paksa Semua Teks & Judul Jadi Putih Terang */
+    h1, h2, h3, h4, h5, h6, p, span, label, div {
+        color: #FAFAFA !important;
+    }
+    
+    /* Perbaiki Teks Judul Utama */
+    .stMarkdown h1, .stMarkdown h2 {
+        color: #FFFFFF !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
 import sqlite3
 import json
 import os
